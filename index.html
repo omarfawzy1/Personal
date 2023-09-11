@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/Bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="c.css">
+        <title>My Portifolio</title>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    </head>
+  
+    <body>
+        <div class= "position-relative w-100 ">
+            <div class = "row position-absolute w-100 h-100" >
+                <div class = "col"></div>
+                <div class = "col flex-column justify-content-center ">
+                    <div class="row">
+                        <div id="liveAlertPlaceholder" class = "position-absolute" style="z-index: 1;"></div>
+                    </div>
+                    <div id="links-holder" class = "row contact-links float-end align-self-center w-100 flex-fill" >
+                        <div class = "d-flex flex-wrap justify-content-around shadow p-3 mb-5 bg-body-tertiary rounded h-100">
+                            <a class="icon-link icon-link-hover" href="#">
+                                <i class="bi bi-linkedin contact-link" style="font-size: 30px;"></i>    
+                            </a>
+                            <a class="icon-link icon-link-hover" href="#">
+                                <i class="bi bi-github contact-link" style="font-size: 30px;color: black;"></i>    
+                            </a>
+                            <a class="icon-link icon-link-hover" href="#" >
+                                <img src="leetcode.svg" alt="leetcode" class="bi contact-link h-100 icon"></img>    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <img src="svg/bv_4.svg" alt="leetcode" class="w-100"></img>
+        </div>
+        
+        <div class="p-2 mb-4" >
+            <button type="button" class="btn btn-primary contact-links" id="liveAlertBtn">Show live alert</button>
+           
+            <div >
+                <p class = "fs-3 text fw-semibold">Skills</p>
+                <div class = "d-flex flex-row text-center" >
+                   <div class = "col skill-set flex-sm-fill" id ="front-end-skills" style="background-color: aquamarine;">
+                    <p class = "fs-5 text fw-medium">javascript</p>
+                    <p class = "fs-5 text">angular</p>
+                    <p class = "fs-5 text">css</p>
+                    <p class = "fs-5 text">html</p>
+                   </div> 
+                   <div class = "col flex-fill" id ="dev-ops-skills">
+                    <p class = "fs-5 text">ci/cd</p>
+                    <p class = "fs-5 text">github</p>
+                    <p class = "fs-5 text">docker</p>
+                   </div> 
+                   <div class = "col flex-fill" id ="backend-skills">
+                    <p class="fs-5 text">Spring Boot</p>
+                    <p class="fs-5 text">Java</p>
+                    <p class="fs-5 text">Android (Compose)</p>
+                    <p class="fs-5 text">Python</p>
+                    <p class="fs-5 text">C++</p>
+                   </div> 
+                </div>
+            </div>
+            <div>
+                <p class="fs-3 text">Projects</p>
+                <div id = "projects-holder" class = "shadow p-4 mb-5 bg-body-tertiary rounded ">
+                    <div class = "row">
+                        <div class = "project rounded-2 p-2 mb-4" style="width: 100%;background-color: bisque;">
+                            <p>Easy FLow</p>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col project rounded-2 p-2 me-3" style="background-color: bisque;">
+                            <p>Easy FLow</p>
+                        </div>
+                        <div class = "col project rounded-2 p-2 ms-3" style="background-color: bisque;">
+                            <p>Easy FLow</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </body>
+
+    <div id = "link">
+        <p>Hiii</p>
+    </div>
+    <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, 100px, 0);" href="#">
+        <i class="bi bi-linkedin hrver"></i>    
+    </a>
+
+    <script>
+        console.clear()
+        class Item {
+            htmlElement;
+            constructor(){
+                this.htmlElement = document.createElement("div")
+                this.htmlElement.innerHTML = `wsd fas ${"sd"}`
+                
+            }
+            
+
+
+        }
+        function setupAlert(){
+            const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+            const alert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+    
+            alertPlaceholder.append(wrapper)
+            }
+    
+            const alertTrigger = document.getElementById('liveAlertBtn')
+            if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                alert('Nice, you triggered this alert message!', 'success')
+                })
+            }
+        }
+        
+        /*function setupLinks(){
+            const placeholder = document.getElementById("linksPlaceholder")
+            const link = document.getElementById("link").cloneNode(true)
+            //document.getElementById().setAttribute
+            console.log("herr")
+            //nwlink = document.createElement(link)
+            placeholder.append(link)
+            s = new Item()
+            
+            
+            placeholder.append(s.htmlElement)
+        }*/
+        const links = []
+        setupAlert()
+        //setupLinks()
+    </script>
+</html>

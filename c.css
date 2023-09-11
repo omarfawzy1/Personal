@@ -1,0 +1,80 @@
+.contact-link{
+    display: block;
+    opacity: .8;
+    transform: rotate(0.0);
+} 
+
+
+.contact-links{
+    animation: left_ease_in 2s;
+    animation-timing-function: ease-in;
+}   
+
+.name{
+    position: relative;
+    animation: fade-in 2s ease-out;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes left_ease_in {
+    0%{
+        opacity: 0;
+        transform: translate(100%, 0);
+    }
+    50%{
+        opacity: 0;
+        transform: translate(100%, 0); 
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes scale_up_in{
+    from{
+        transform: scale(1);
+    }    
+    to{
+        transform: scale(1.5);
+    } 
+}
+@keyframes scale_up_out{
+    from{
+        transform: scale(1.5);
+    }    
+    to{
+        transform: scale(1);
+    } 
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.skill-set{
+    
+}
+
+.skill-set:hover{
+    
+}
+
+.contact-link:hover {
+    animation: scale_up_in 1s;
+    animation-fill-mode: forwards;
+}
+
+.contact-link{
+    animation: scale_up_out 1s;
+    animation-fill-mode: backwards;
+}
