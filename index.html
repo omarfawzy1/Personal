@@ -140,7 +140,6 @@
         }
 
         function loadSkills(skill_set){
-            //var skill_set_element = document.createElement("div");
             var skill_set_element = "";
             var skills_element = "";
             skill_set.skill_set.forEach(skill =>{
@@ -151,8 +150,6 @@
                 <p class="skill-set drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">${skill_set.name}</p>
                 ${skills_element}
             </div>`
-            //console.log(skill_set_element)
-            //console.log(skill_set_element.firstChild)
             const parser = new DOMParser();
             const doc = parser.parseFromString(skill_set_element, 'text/html');
             document.getElementById("main-skills-holder").appendChild(doc.body.firstChild)
@@ -203,7 +200,7 @@
         //object.addEventListener("submit", sendEmail());
 
         function sendEmail(name, subject, message){
-            document.location = `mailto:Omar.fawzy2020@outlook.com?subject=${subject}&body=${message}`
+            document.location = `mailto:Omar.fawzy2020@outlook.com?subject=${subject}&body=${message + "\n from " + name}`
         }
 
         loadData()        
