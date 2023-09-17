@@ -1,0 +1,1 @@
+<img class = "transition translate ease-in-out duration-500 filter group-hover:blur-[5px] rounded-md relative" src ="res/easy_flow.png" alt="easy flow cover">

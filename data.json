@@ -1,0 +1,39 @@
+{
+    "projects":[
+        {
+            "title":"Easy FLow",
+            "category":"(Graduation Project)",
+            "description":"• Used Stack Spring Boot, Android (Kotlin), Angular, Redis (Caching), MySQL database.<br> • QR code technology for ticket validation at turnstile machines, for seamless passenger experience.<br> • secured authentication and authorization using JWT (JSON Web Tokens) for enhanced system security.<br> • backend developed using Spring Boot with applied design patterns, creating RESTful APIs for data retrieval and manipulation implemented database operations using MySQL.<br> • Deployed the application on AWS EC2 virtual machine with amazon Linux OS<br>",
+            "skills":["SpringBoot","Angular","Redis","JavaScript"],
+            "text":"white",
+            "background":"res/easy_flow.png"
+        },
+        {
+            "title":"Borrowing Library System",
+            "category":"",
+            "description":"• Developed a generic search engine for an ERP system using Spring Boot as the backend and Antlr for context-free grammar parsing, followed scrum agile methodology collaborating in a team of 7.<br> • Utilized a MySQL database and implemented custom repositories for efficient data retrieval.<br> • Contributed to the development of functionalities, including search algorithms and query processing.",
+            "skills":["Django","SqlLite","Ajax","Python"],
+            "text":"white",
+            "background":"res/library_system.png"
+        }
+    ],
+    "main_skills":[
+        {
+            "name":"Front-End",
+            "skill_set":["Angular","CSS","Html"]
+        },
+        {
+            "name":"Other",
+            "skill_set":["CI/CD","Docker","Git","Github","Linux"]
+        },
+        {
+            "name":"Back-End",
+            "skill_set":["SpringBoot","MySql","Html"]
+        },
+        {
+            "name":"Programming Languages",
+            "skill_set":["Java","C++","Kotlin","JavaScript"]
+        }
+    ]
+
+}

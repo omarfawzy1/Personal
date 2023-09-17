@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .section{
+        @apply bg-gray-950/90 text-white/90 mx-auto text-center font-semibold font-mono tracking-wide text-2xl lg:text-3xl h-14 flex items-center justify-center lg:max-w-7xl 
+    }
+
+    .i-text{
+        @apply text-lg sm:text-xl 
+    }
+
+    .skill{
+        @apply font-semibold text-white mx-auto font-mono tracking-wider flex flex-row items-center justify-center space-x-4 text-lg md:text-2xl md:tracking-wide 
+    }
+
+    .skill-set{
+        @apply font-bold mb-1 text-white/90 mx-auto font-mono tracking-wider flex flex-row items-center justify-center text-xl md:text-3xl md:tracking-wide
+    }
+    
+    .project-holder{
+        @apply rounded-sm shadow-md bg-white/50 text-white 
+    }
+}
+
