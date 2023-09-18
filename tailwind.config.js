@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       transitionProperty: {
-        'height': 'height'
+        'height': 'max-height'
       },
       animation:{
         scale_up_in:"scale_up_1 1s ease-in 0s 1 normal forward",

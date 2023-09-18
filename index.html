@@ -24,7 +24,7 @@
     </div>
     <div class = "section">Projects</div>
     <div class = "py-10 bg-transparent px-6 space-y-4 " id="projects-holder" >
-        <div hidden class="bg-cover group  bg-slate-500 relative project-holder shadow-md rounded-2xl max-w-full sm:max-w-xl lg:max-w-4xl mx-auto min-w-sm transition-height ease-in-out duration-1000 h-[35rem] sm:hover:h-[30rem] hover:h-[15rem]" style="background-image: url('${project.background}');">
+        <div hidden class="bg-cover group  bg-slate-500 relative project-holder shadow-md rounded-2xl max-w-full sm:max-w-xl lg:max-w-4xl mx-auto min-w-sm transition-all ease-in-out duration-1000 hover:max-h-[50rem] max-h-[15rem]" style="background-image: url('${project.background}');">
             <div class="flex flex-col p-4 text-black font-mono font-semibold tracking-wide mx-auto sm:text-left h-full overflow-clip transition ease-in-out duration-500 filter hover:backdrop-blur-[10px] hover:backdrop-brightness-50   hover:text-white/90 "> 
                 <div>
                     <span class = "text-xl shadow-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] " > 
@@ -33,7 +33,12 @@
                     </span> 
                     <br>
                     <span class="transation sm:text-[18px]  text-[14px] tracking-tight opacity-0 group-hover:opacity-100 duration-500 delay-500 ">
-                        ${project.description}
+                        kaslkfjasdklfj alskd;jf lkadsjf kl;ajsd<br>
+                        kaslkfjasdklfj alskd;jf lkadsjf kl;ajsd<br>
+                        kaslkfjasdklfj alskd;jf lkadsjf kl;ajsd<br>
+                        kaslkfjasdklfj alskd;jf lkadsjf kl;ajsd<br>
+                        kaslkfjasdklfj alskd;jf lkadsjf kl;ajsd<br>
+                        kaslkfjasdklfj alskd;jf lkadsjf kl;ajsd<br>
                     </span>
                     <span class="group">
                     </span>
@@ -195,7 +200,7 @@
                 skills_element += `<div class="skill space-x-2 first:mt-3 pe-2 bg-blue-500 transation opacity-0 group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>${skills[skill].name}</p> </div>`
             })
             project_element.innerHTML = `
-                <div class="bg-cover group  bg-slate-500 relative project-holder shadow-md rounded-2xl max-w-full sm:max-w-xl lg:max-w-4xl mx-auto min-w-sm transition-height ease-in-out duration-1000 hover:h-[35rem] sm:hover:h-[30rem] h-[15rem]" style="background-image: url('${project.background}');">
+                <div class="bg-cover group  bg-slate-500 relative project-holder shadow-md rounded-2xl max-w-full sm:max-w-xl lg:max-w-4xl mx-auto min-w-sm transition-all ease-in-out duration-1000 hover:max-h-[50rem] max-h-[15rem]" style="background-image: url('${project.background}');">
                     <div class="flex flex-col p-4 text-black font-mono font-semibold tracking-wide mx-auto sm:text-left h-full overflow-clip transition ease-in-out duration-500 filter hover:backdrop-blur-[10px] hover:backdrop-brightness-50   hover:text-white/90"> 
                         <div>
                             <span class = "text-xl shadow-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] " > 
@@ -209,7 +214,7 @@
                             <span class="group">
                             </span>
                         </div>
-                        <div class="flex flex-row flex-wrap h-fit space-y-3">
+                        <div class="flex flex-row flex-wrap h-fit space-y-3 my-3">
                             ${skills_element}
                         </div>
                         <div class="h-full"></div>
