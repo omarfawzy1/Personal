@@ -12,7 +12,7 @@
     }
 
     .skill{
-        @apply font-semibold text-white mx-auto font-mono tracking-wider flex flex-row items-center justify-center space-x-4 text-lg md:text-2xl md:tracking-wide 
+        @apply font-semibold text-white mx-auto font-mono tracking-wider flex  items-center justify-center  text-lg md:text-2xl md:tracking-wide h-8
     }
 
     .skill-set{

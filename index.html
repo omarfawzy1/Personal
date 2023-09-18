@@ -24,7 +24,33 @@
     </div>
     <div class = "section">Projects</div>
     <div class = "py-10 bg-transparent px-6 space-y-4 " id="projects-holder" >
-    
+        <div hidden class="bg-cover group  bg-slate-500 relative project-holder shadow-md rounded-2xl max-w-full sm:max-w-xl lg:max-w-4xl mx-auto min-w-sm transition-height ease-in-out duration-1000 h-[35rem] sm:hover:h-[30rem] hover:h-[15rem]" style="background-image: url('${project.background}');">
+            <div class="flex flex-col p-4 text-black font-mono font-semibold tracking-wide mx-auto sm:text-left h-full overflow-clip transition ease-in-out duration-500 filter hover:backdrop-blur-[10px] hover:backdrop-brightness-50   hover:text-white/90 "> 
+                <div>
+                    <span class = "text-xl shadow-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] " > 
+                        ${project.title}
+                        <span class="text-lg tracking-tight transation opacity-0 group-hover:opacity-100 duration-500 text-ellipsis"> ${project.category}</span> 
+                    </span> 
+                    <br>
+                    <span class="transation sm:text-[18px]  text-[14px] tracking-tight opacity-0 group-hover:opacity-100 duration-500 delay-500 ">
+                        ${project.description}
+                    </span>
+                    <span class="group">
+                    </span>
+                </div>
+                <div class="flex flex-row flex-wrap h-fit space-y-3  bg-green-500">
+                    <div class="skill first:mt-3 pe-2 bg-blue-500 transation group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>Reddis</p> </div>
+                    <div class="skill first:mt-3  bg-blue-500 transation group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>JavaScript</p> </div>
+                    <div class="skill pe-2 bg-blue-500 transation group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>Github</p> </div>
+                    <div class="skill pe-2 bg-blue-500 transation group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>Google</p> </div>
+                    <div class="skill space-x-2 pe-2 bg-blue-500 transation group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>Git</p> </div>
+                </div>
+                <div class="h-full"></div>
+                <form action="${project.link}" target="_blank">
+                    <button type="submit" class=" flex w-full items-center justify-center rounded-md bg-indigo-600 transation group-hover:opacity-100 duration-500 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Code</button>
+                </form>
+            </div>
+        </div>
     </div>
     <p class = "section">Contact Me</p>
     <div class = "h-100 bg-transparent text-white " >
@@ -88,7 +114,7 @@
                 {
                     "title":"Borrowing Library System",
                     "category":"",
-                    "description":"• Developed a generic search engine for an ERP system using Spring Boot as the backend and Antlr for context-free grammar parsing, followed scrum agile methodology collaborating in a team of 7.<br> • Utilized a MySQL database and implemented custom repositories for efficient data retrieval.<br> • Contributed to the development of functionalities, including search algorithms and query processing.",
+                    "description":"• Developed a borrowing library system using Django, Python, and SQLite database.<br>• Implemented a search section for users to find books and an adaptive home screen.<br>• has an admin page for book management, allowing the admin to add and manage books in the library.",
                     "skills":["Django","SqlLite","Ajax","Python"],
                     "text":"white",
                     "background":"res/library_system.png",
@@ -166,11 +192,11 @@
             var skills_element = "";
             //console.log(project)
             project.skills.forEach(skill => {
-                skills_element += `<div class="skill pe-2 bg-blue-500 transation opacity-0 group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>${skills[skill].name}</p> </div>`
+                skills_element += `<div class="skill space-x-2 first:mt-3 pe-2 bg-blue-500 transation opacity-0 group-hover:opacity-100 duration-500 hover:bg-${skills[skill].color} shadow-md rounded-md"><img class="rounded-s-md w-8 h-8" src="${skills[skill].icon}" alt="${skills[skill].name}"> <p>${skills[skill].name}</p> </div>`
             })
             project_element.innerHTML = `
                 <div class="bg-cover group  bg-slate-500 relative project-holder shadow-md rounded-2xl max-w-full sm:max-w-xl lg:max-w-4xl mx-auto min-w-sm transition-height ease-in-out duration-1000 hover:h-[35rem] sm:hover:h-[30rem] h-[15rem]" style="background-image: url('${project.background}');">
-                    <div class="flex flex-col p-4 text-black font-mono font-semibold tracking-wide mx-auto sm:text-left h-full overflow-clip transition ease-in-out duration-500 filter hover:backdrop-blur-[10px] hover:backdrop-brightness-50   hover:text-white/90 space-x-4"> 
+                    <div class="flex flex-col p-4 text-black font-mono font-semibold tracking-wide mx-auto sm:text-left h-full overflow-clip transition ease-in-out duration-500 filter hover:backdrop-blur-[10px] hover:backdrop-brightness-50   hover:text-white/90"> 
                         <div>
                             <span class = "text-xl shadow-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] " > 
                                 ${project.title}
@@ -183,15 +209,15 @@
                             <span class="group">
                             </span>
                         </div>
-                        <div class="flex flex-row flex-wrap m-t-3 items-center justify-center h-full ">
+                        <div class="flex flex-row flex-wrap h-fit space-y-3">
                             ${skills_element}
                         </div>
+                        <div class="h-full"></div>
                         <form action="${project.link}" target="_blank">
-                            <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 transation opacity-0 group-hover:opacity-100 duration-500 px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Code</button>
+                            <button type="submit" class="flex w-full items-center justify-center rounded-md bg-indigo-600 transation opacity-0 group-hover:opacity-100 duration-500 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Code</button>
                         </form>
                     </div>
                 </div>` 
-
 
             document.getElementById("projects-holder").appendChild(project_element)
         }
