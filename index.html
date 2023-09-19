@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="dist/output.css" rel="stylesheet">
+        <link rel="icon" href="res/page_icon.png">
     </head>
   <body class ="bg-contain filter backdrop-blur-[9px]    " style="background-image: url('res/backgrounds/math2.jpg');">
     <div class="sm:text-left text-center text-white p-3">
@@ -15,7 +16,21 @@
     <form action="https://drive.google.com/file/d/1tKhkWrR0jESsgE0zUbQlmMRcZ28Q84rR/view?usp=drive_link" target="_blank">
         <button type="submit" class="section flex w-full items-center justify-center bg-indigo-600 transation group-hover:opacity-100 duration-500 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> Résumé </button>
     </form>
-
+    
+    <div class = "my-4 flex flex-row flex-wrap h-fit items-center justify-around max-w-7xl mx-auto">
+        <a class = "link" title="My Github Page" href="https://github.com/omarfawzy1" target="_blank">
+            <img src="res/links/github.webp" alt="Github"> 
+        </a>
+        <a class = "link" title="My Linked In Profile" href="https://www.linkedin.com/in/omar-fawzy-2884b51ba/" target="_blank">
+            <img src="res/links/linked_in.webp" alt="Github"> 
+        </a>
+        <a class = "link bg-transparent" title="Leet Code Profile" href="https://leetcode.com/OmarFawzy/" target="_blank">
+            <img src="res/links/leetcode.png" alt="Github"> 
+        </a>
+        <a class = "link bg-transparent" title="Hacker Rank" href="https://www.hackerrank.com/omar552001" target="_blank">
+            <img src="res/links/hacker_rank.webp" alt="Github"> 
+        </a>
+    </div>
     <div class = "bg-transparent">
     <p class = "section hover:animate-scale_up_in enabled:animate-scale_up_out">Skills</p>
     <div class = " bg-transparent sm:flex sm:flex-row flex-wrap sm:content-evenly max-w-7xl mx-auto break-keep " id="main-skills-holder">
@@ -218,7 +233,7 @@
                             <span class="group">
                             </span>
                         </div>
-                        <div class="flex flex-row flex-wrap h-fit space-y-3 my-3">
+                        <div class="flex flex-row flex-wrap h-fit space-y-3 my-6">
                             ${skills_element}
                         </div>
                         <div class="h-full"></div>

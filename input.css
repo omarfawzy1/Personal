@@ -26,5 +26,9 @@
     .project-holder{
         @apply rounded-sm shadow-md bg-white/50 text-white 
     }
+
+    .link{
+        @apply rounded-full transition-all duration-100 w-[4rem] h-[4rem] shadow-lg bg-white flex items-center justify-center hover:w-[5rem] hover:h-[5rem]
+    }
 }
 
