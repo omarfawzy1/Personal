@@ -4,7 +4,7 @@
 
 @layer components{
     .section{
-        @apply bg-gray-950/90 text-white/90 mx-auto text-center font-semibold font-mono tracking-wide text-2xl lg:text-3xl h-14 flex items-center justify-center lg:max-w-7xl 
+        @apply bg-gray-950/90 text-white/90 mx-auto text-center font-semibold font-mono tracking-wide text-2xl lg:text-3xl h-14 flex items-center justify-center 
     }
 
     .i-text{
@@ -12,11 +12,15 @@
     }
 
     .skill{
-        @apply font-semibold text-white mx-auto font-mono tracking-wider flex  items-center justify-center  text-lg md:text-2xl md:tracking-wide h-8
+        @apply font-semibold text-white mx-auto font-mono tracking-wider flex  items-center justify-center  text-lg md:text-2xl md:tracking-wide h-8 transition-all hover:bg-indigo-800 hover:rounded-3xl duration-200 w-fit px-4
+    }
+
+    .project-skill{
+        @apply    font-semibold text-white mx-auto font-mono tracking-wider flex  items-center justify-center  text-lg md:text-2xl md:tracking-wide h-8
     }
 
     .skill-set{
-        @apply font-bold mb-1 text-white/90 mx-auto font-mono tracking-wider flex flex-row items-center justify-center text-xl md:text-3xl md:tracking-wide
+        @apply font-bold mb-1 text-indigo-300 mx-auto font-mono tracking-wider flex flex-row items-center justify-center text-xl md:text-3xl md:tracking-wide transition-all hover:bg-black hover:rounded-3xl duration-200 w-fit px-4
     }
     
     .project-holder{
